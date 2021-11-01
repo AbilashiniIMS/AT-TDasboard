@@ -1,0 +1,679 @@
+@media screen and (max-width: 1200px) {
+  .primary_container {
+    section {
+      .assist {
+        .call_now {
+          .card-group {
+            .card {
+              .card-header {
+                h4 {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .primary_container {
+    header {
+      .img_title {
+        width: 50%;
+      }
+    }
+    section {
+      .revenue_total {
+        height: 470px;
+        .revenue {
+          height: 350px;
+          padding: $p-1;
+          .chart_page {
+            height: 350px;
+            .left_side {
+              .card {
+                .card-header {
+                  h1 {
+                    font-size: $f2;
+                  }
+                }
+              }
+            }
+            .right_side {
+              .number_count {
+                .card {
+                  .col-md-8 {
+                    &:nth-child(1) {
+                      span {
+                        img {
+                          width: 70%;
+                          height: 70%;
+                        }
+                      }
+                    }
+                    &:nth-child(2) {
+                      .num-count {
+                        h3 {
+                          font-size: $f1;
+                        }
+                      }
+                      p {
+                        font-size: $p1;
+                      }
+                    }
+                  }
+                }
+              }
+              .chart_div {
+                .card {
+                  padding-top: 5px;
+                  .card-header {
+                    h4 {
+                      @include h4_tab;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .counter {
+        .number-count {
+          .col.card-group {
+            .card {
+              margin: 0px 10px 0 0px;
+              .row {
+                .num-count {
+                  h3 {
+                    font-size: $f1;
+                  }
+                }
+                p {
+                  font-size: $p1;
+                }
+              }
+            }
+          }
+        }
+      }
+      .assist {
+        span.colorCircle {
+          left: -3.5%;
+          top: -12%;
+          img {
+            object-fit: contain;
+            width: 22px;
+            height: 22px;
+          }
+        }
+        .call_now {
+          .card-group {
+            .card {
+              padding: $p-2;
+              .card-header {
+                h4 {
+                  @include h4_tab;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .primary_container {
+    header {
+      .img_title {
+        width: 60%;
+        .logo_img {
+          img {
+            object-fit: contain;
+            width: 90px;
+          }
+        }
+      }
+      .para_select {
+        @include flex_stretch;
+        margin-right: 10px;
+        .logo_text {
+          margin-right: 0px;
+        }
+      }
+    }
+    section {
+      .revenue_total {
+        height: 1020px;
+        .revenue {
+          // height: 520px;
+          .top {
+            h2 {
+              font-size: 24px;
+            }
+            .hour_img {
+              p {
+                margin: 0 20px 0 0;
+                font-size: $p2;
+                strong {
+                  @include strong;
+                  font-size: 15px;
+                }
+              }
+              span {
+                img {
+                  width: 23px;
+                  height: 23px;
+                }
+              }
+            }
+          }
+          .chart_page {
+            display: block;
+            width: 90%;
+            height: 450px;
+            margin: 30px auto 0;
+            .left_side {
+              width: 100%;
+            }
+            .right_side {
+              margin-top: 4%;
+              width: 100%;
+              .number_count {
+                height: 35% !important;
+                @include flex_around;
+                .card {
+                  .col-md-8 {
+                    &:nth-child(2) {
+                      .num-count {
+                        h3 {
+                          font-size: 17px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .counter {
+        .number-count {
+          margin: 10px 0;
+          .col.card-group {
+            .card {
+              .row {
+                padding: 0px;
+                .num-count {
+                  h3 {
+                    font-size: 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .assist {
+        span.colorCircle {
+          left: -4%;
+        }
+        .call_now {
+          .card-group {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            .card {
+              margin: 30px 0;
+              .card-header {
+                h4 {
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .primary_container {
+    header {
+      display: inline-block;
+      .img_title {
+        width: 90%;
+      }
+      .para_select {
+        margin-top: 15px;
+        @include flex_twoend;
+        .logo_text {
+          margin-right: 10px;
+        }
+      }
+    }
+    section {
+      .revenue_total {
+        height: 820px;
+        .revenue {
+          // height: 520px;
+          .top {
+            h2 {
+              font-size: 24px;
+            }
+            .hour_img {
+              p {
+                margin: 0 20px 0 0;
+                font-size: $p2;
+                strong {
+                  @include strong;
+                  font-size: 15px;
+                }
+              }
+              span {
+                img {
+                  width: 23px;
+                  height: 23px;
+                }
+              }
+            }
+          }
+          .chart_page {
+            display: block;
+            width: 100%;
+            height: 350px;
+            margin: 30px auto 0;
+            .left_side {
+              width: 90%;
+              margin: 0 auto;
+            }
+            .right_side {
+              margin-top: 4%;
+              width: 100%;
+              .number_count {
+                height: 40% !important;
+                @include flex_around;
+              }
+            }
+          }
+        }
+      }
+      .counter {
+        .number-count {
+          .col.card-group {
+            display: block;
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+            .card {
+              margin: 10px 0px;
+              .row {
+                border-right: 0px solid $border_Color1;
+                .num-count {
+                  @include flex_center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .assist {
+        span.colorCircle {
+          left: -5.5%;
+        }
+        .call_now {
+          .card-group {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            .card {
+              margin: 30px 0;
+              .card-header {
+                h4 {
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    ul.nav_icons {
+      right: 12px;
+      li.nav_list {
+        padding: 0px;
+      }
+    }
+  }
+  .primary_container {
+    header {
+      .img_title {
+        width: 100%;
+        display: block;
+        .logo_img {
+          border-right: 0px solid $border_Color1;
+        }
+        .logo_text {
+          margin-top: 10px;
+          padding-left: 15px;
+          border-left: 2px solid $border_Color1;
+        }
+      }
+      .para_select {
+        margin-right: 0px;
+        @include flex_between;
+        .logo_year {
+          .selectpicker {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    section {
+      .revenue_total {
+        height: 1100px;
+        .revenue {
+          .top {
+            display: block;
+            h2 {
+              font-size: 20px;
+            }
+            .hour_img {
+              @include flex_between;
+              p {
+                strong {
+                  font-size: 14px;
+                }
+              }
+              span {
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+          .chart_page {
+            height: 400px;
+            .left_side {
+              width: 100%;
+              height: 70%;
+              .card {
+                padding: 10px 10px 0px;
+                .card-header {
+                  h1 {
+                    font-size: 13.5px;
+                    width: 80%;
+                  }
+                }
+                .card-body {
+                  padding: 0;
+                }
+              }
+            }
+            .right_side {
+              width: 100%;
+              height: auto;
+              .number_count {
+                height: 40% !important;
+                @include flex_row;
+                margin: 10px 0;
+                .card {
+                  margin: 15px 0;
+                  .col-md-8 {
+                    &:nth-child(1) {
+                      height: 40px;
+                      span {
+                        img {
+                          width: 60%;
+                          height: 60%;
+                        }
+                      }
+                    }
+                    &:nth-child(2) {
+                      .num-count {
+                        h3 {
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .chart_div {
+                width: 100%;
+                display: block;
+                .card {
+                  width: 100%;
+                  margin-bottom: 20px;
+                  .card-header {
+                    @include card_header;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .counter {
+        .number-count {
+          margin: 10px 0px 0;
+          padding: 10px 20px 5px;
+          .col.card-group {
+            width: 100%;
+            .card {
+              margin: 15px 0px;
+            }
+          }
+        }
+      }
+      .assist {
+        span.colorCircle {
+          top: -6%;
+          left: -8%;
+          img {
+            object-fit: contain;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .call_now {
+          .card-group {
+            width: 90%;
+            .card {
+              width: 100%;
+              margin-bottom: 20px;
+              .card-header {
+                @include card_header;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      float: left;
+      p {
+        color: $white;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    ul.nav_icons {
+      right: 12px;
+      li.nav_list {
+        padding: 0px;
+      }
+    }
+  }
+  .primary_container {
+    header {
+      .img_title {
+        width: 100%;
+        display: block;
+        .logo_img {
+          border-right: 0px solid $border_Color1;
+        }
+        .logo_text {
+          margin-top: 10px;
+          padding-left: 15px;
+          border-left: 2px solid $border_Color1;
+        }
+      }
+      .para_select {
+        margin-right: 0px;
+        @include flex_between;
+        .logo_year {
+          .selectpicker {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    section {
+      .revenue_total {
+        height: 1100px;
+        .revenue {
+          .top {
+            display: block;
+            h2 {
+              font-size: 20px;
+            }
+            .hour_img {
+              @include flex_between;
+              p {
+                strong {
+                  font-size: 14px;
+                }
+              }
+              span {
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+          .chart_page {
+            height: 400px;
+            .left_side {
+              width: 100%;
+              height: 70%;
+              .card {
+                padding: 10px 10px 0px;
+                .card-header {
+                  h1 {
+                    font-size: 13.5px;
+                    width: 80%;
+                  }
+                }
+                .card-body {
+                  padding: 0;
+                }
+              }
+            }
+            .right_side {
+              width: 100%;
+              height: auto;
+              .number_count {
+                height: 40% !important;
+                @include flex_row;
+                margin: 10px 0;
+                .card {
+                  margin: 15px 0;
+                  .col-md-8 {
+                    &:nth-child(1) {
+                      height: 40px;
+                      span {
+                        img {
+                          width: 60%;
+                          height: 60%;
+                        }
+                      }
+                    }
+                    &:nth-child(2) {
+                      .num-count {
+                        h3 {
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .chart_div {
+                width: 100%;
+                display: block;
+                .card {
+                  width: 100%;
+                  margin-bottom: 20px;
+                  .card-header {
+                    @include card_header;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .counter {
+        .number-count {
+          margin: 10px 0px 0;
+          padding: 10px 20px 5px;
+          .col.card-group {
+            width: 100%;
+            .card {
+              margin: 15px 0px;
+            }
+          }
+        }
+      }
+      .assist {
+        span.colorCircle {
+          top: -6%;
+          left: -8%;
+          img {
+            object-fit: contain;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .call_now {
+          .card-group {
+            width: 90%;
+            .card {
+              width: 100%;
+              margin-bottom: 20px;
+              .card-header {
+                @include card_header;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      float: left;
+      p {
+        color: $white;
+        font-size: 11px;
+      }
+    }
+  }
+}

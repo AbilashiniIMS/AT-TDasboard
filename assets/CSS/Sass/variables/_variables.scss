@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$font1: "Poppins", sans-serif;
+$font2: "Lato", sans-serif;
+
+// colors
+$bg_Color1: #0d111c; //body background-color
+$bg_Color2: #0d0f1b;
+$bg_Color3: #121621; //body background-color
+$bg_color4: #151929; //section background-color
+$revenue_color1: #161c2c;
+$revenue_color2: #444653;
+$sky_color: #01b1ed; //color of year 2021
+$white: #fff; //white text color
+$gray: #bebebe; //gray color para
+$border_Color1: #706c6c8a; //card border color
+$card_background: #1e2432; // card bg color
+
+//paddings
+$p-1: 20px;
+$p-2: 5px 10px;
+$p-3: 25px;
+$p-4: 10px;
+$p-5: 0 10px;
+$p-6: 0 15px;
+$pc-1: 0 0 10px; //padding top and bottom , right and left
+
+// margin
+$m-1: 10px;
+$mr-1: 10px; //margin top and bottom ,left and right
+
+// padding & margin
+$pm-1: 0 2px;
+
+//font size
+$f1: 20px;
+$f2: 18px;
+
+$p1: 10.5px;
+$p2: 12px;

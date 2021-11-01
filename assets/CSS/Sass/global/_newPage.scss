@@ -1,0 +1,388 @@
+body {
+  width: 100%;
+  height: auto;
+  padding: $p-1;
+  background: linear-gradient(to right, $bg_Color1, $bg_Color1, $bg_Color2);
+  position: relative;
+  a {
+    text-decoration: none;
+  }
+  ul.nav_icons {
+    position: absolute;
+    content: '';
+    right: 5px;
+    top: 0%;
+    padding: 0;
+    list-style-type: none;
+    z-index: 2;
+    li.nav_list {
+      position: relative;
+      padding: $p-2;
+      margin: 25px 0px;
+      img {
+        object-fit: contain;
+        width: 22px;
+        height: 22px;
+        opacity: 0;
+        display: none;
+        &:nth-child(1) {
+          opacity: 1;
+          display: block;
+        }
+      }
+
+      &:hover img:nth-child(1) {
+        opacity: 0;
+        display: none;
+      }
+      &:hover img:nth-child(2) {
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+}
+
+.primary_container {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  header {
+    @include flex_between;
+    margin-bottom: 10px;
+    .img_title {
+      width: 40%;
+      display: flex;
+      .logo_img {
+        width: auto;
+        margin-right: 20px;
+        padding-right: $p-1;
+        border-right: 2px solid $border_Color1;
+        img {
+          object-fit: contain;
+          width: 100px;
+        }
+      }
+      .logo_text {
+        h4 {
+          margin: 0;
+          font-family: $font1;
+          font-size: 16px;
+          color: $white;
+        }
+      }
+    }
+    .para_select {
+      @include flex_center;
+      .logo_text {
+        margin-right: 15px;
+        p {
+          @include p_tag;
+          strong {
+            @include strong;
+            font-size: 14px;
+          }
+        }
+      }
+      .logo_year {
+        .selectpicker {
+          font-size: 13px;
+          color: $sky_color;
+          font-family: $font1;
+          background: transparent;
+          border: 0px;
+          font-weight: bold;
+          outline: none;
+          line-height: none;
+        }
+      }
+    }
+  }
+  section {
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: $p-1;
+    background: $bg_color4;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px $bg_Color1;
+    position: relative;
+    .revenue_total {
+      width: 100%;
+      height: 530px;
+      box-shadow: none;
+      // background-color: turquoise;
+      .revenue {
+        width: 100%;
+        height: 420px;
+        padding: $p-3;
+        margin: 0;
+        border-radius: 20px 20px 0px 0px;
+        background: linear-gradient(to right, $revenue_color1, $revenue_color2);
+        box-shadow: none;
+        .top {
+          @include flex_between;
+          margin: 0 0 10px;
+          h2 {
+            font-size: 28px;
+            color: $white;
+            font-family: $font1;
+          }
+          .hour_img {
+            @include flex_end;
+            p {
+              @include p_tag;
+              margin: 0 40px 0 0;
+              strong {
+                @include strong;
+                font-size: 18px;
+              }
+            }
+            span {
+              margin: 0;
+              img {
+                width: 28px;
+                height: 28px;
+                object-fit: contain;
+                display: none;
+                &:nth-child(1) {
+                  display: block;
+                }
+              }
+              &:hover img:nth-child(1) {
+                display: none;
+              }
+              &:hover img:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+        }
+        .chart_page {
+          width: auto;
+          height: 400px;
+          margin-top: 50px;
+          @include flex_between;
+          .left_side {
+            width: 45%;
+            height: 100%;
+            margin: 0 20px 0px 0;
+            // background-color: white;
+            .card {
+              background-color: $card_background;
+              width: 100%;
+              margin: 0 auto;
+              height: 100%;
+              padding: $p-1;
+              border-radius: 5px;
+              border: 0px;
+              .card-header {
+                background-color: transparent;
+                padding: $pc-1;
+                @include flex_between;
+                h1 {
+                  font-size: 20px;
+                  font-family: $font2;
+                  text-transform: uppercase;
+                  margin: 0;
+                  color: $white;
+                }
+                span {
+                  @include span;
+                  // width: 18px;
+                  // height: 18px;
+                }
+              }
+              .card-body {
+                @include card_img;
+              }
+            }
+          }
+          .right_side {
+            width: 54%;
+            height: 100%;
+            .number_count {
+              height: 40% !important;
+              // @include flex_between;
+              .card {
+                background-color: transparent;
+                border: 0px !important;
+                .col-md-8 {
+                  &:nth-child(1) {
+                    padding: $p-4;
+                    height: 60px;
+                    @include flex_center;
+                    span {
+                      img {
+                        width: auto;
+                        height: auto;
+                      }
+                    }
+                  }
+                  &:nth-child(2) {
+                    width: 100%;
+                    margin-top: 10px;
+                    .num-count {
+                      h3 {
+                        @include h3;
+                      }
+                    }
+                    p {
+                      @include p_tag;
+                    }
+                  }
+                }
+              }
+            }
+            .chart_div {
+              height: 60%;
+              @include flex_between;
+              .card {
+                background-color: $card_background;
+                width: 48.5%;
+                margin: 0;
+                height: 100%;
+                padding: $p-4;
+                border-radius: 5px;
+                .card-header {
+                  padding: $pc-1;
+                  background-color: transparent;
+                  @include flex_baseline;
+                  h4 {
+                    @include h4;
+                  }
+                  span {
+                    @include span;
+                  }
+                }
+                .card-body {
+                  @include card_img;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .counter {
+      margin: 0;
+      box-shadow: none;
+      padding: 0;
+      .number-count {
+        margin: 20px 0px;
+        padding: $p-1;
+        background: transparent;
+        // transform: scale(1.007);
+        // box-shadow: 0px 1px 1px rgba(27, 27, 27, 0.315);
+        .col.card-group {
+          padding: 0;
+          margin: 0;
+          @include flex_between;
+          flex-wrap: wrap;
+          .card {
+            margin: 0px 15px 0 5px;
+            background-color: transparent;
+            color: $white;
+            border: 0px;
+            .row {
+              padding: $p-2;
+              border-right: 1px solid $border_Color1;
+              .num-count {
+                @include flex_align;
+                font-family: $font2;
+                h3 {
+                  @include h3;
+                }
+              }
+              p {
+                @include p_tag;
+              }
+            }
+            .row.no_border {
+              border-right: 0px;
+              padding: 5px 0 5px 10px;
+            }
+          }
+        }
+      }
+    }
+    .assist {
+      padding: $p-6;
+      box-shadow: none;
+      span.colorCircle {
+        position: absolute;
+        content: '';
+        left: -3%;
+        top: -10%;
+        img {
+          object-fit: contain;
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .call_now {
+        .card-group {
+          flex-wrap: wrap;
+          .card {
+            padding: $p-1;
+            padding-top: $p-4;
+            margin: 0 10px;
+            background: $card_background;
+            border-radius: 2px;
+            border-image-slice: 1;
+            border-width: 3px 0px 0px 0px;
+            .card-header {
+              padding: $pc-1;
+              background-color: transparent;
+              @include flex_baseline;
+              h4 {
+                @include h4;
+              }
+              span {
+                @include span;
+              }
+            }
+            .card-body {
+              @include card_img;
+            }
+            &.border-gradient-purple {
+              border-image-source: linear-gradient(
+                to left,
+                #7e33c3,
+                #7e33c3,
+                #a52b7f,
+                #bb2759,
+                #cc223c
+              );
+            }
+            &.border-gradient-red {
+              border-image-source: linear-gradient(
+                to left,
+                #be2c2c,
+                #d83b35,
+                #f78a47,
+                #fa954b
+              );
+            }
+            &.border-gradient-blue {
+              border-image-source: linear-gradient(
+                to left,
+                #48848c,
+                #44929c,
+                #3b99bf,
+                #33a0e5
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    float: right;
+    padding: 10px 0 15px;
+    p {
+      color: $white;
+      font-size: 13px;
+    }
+  }
+}

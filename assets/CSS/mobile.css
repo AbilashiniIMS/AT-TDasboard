@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.with_border {
+  border-bottom: 1px solid #706c6c8a !important;
+}
+
+.without_border {
+  border-bottom: 0px solid #706c6c8a !important;
+}
+
+.card {
+  border: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .primary_container section .assist .call_now .card-group .card .card-header h4 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .primary_container header .img_title {
+    width: 50%;
+  }
+  .primary_container section .revenue_total {
+    height: 470px;
+  }
+  .primary_container section .revenue_total .revenue {
+    height: 350px;
+    padding: 20px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page {
+    height: 350px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card .card-header h1 {
+    font-size: 18px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(1) span img {
+    width: 70%;
+    height: 70%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(2) .num-count h3 {
+    font-size: 20px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(2) p {
+    font-size: 10.5px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card {
+    padding-top: 5px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card .card-header h4 {
+    width: 70%;
+    font-size: 12.5px;
+  }
+  .primary_container section .counter .number-count .col.card-group .card {
+    margin: 0px 10px 0 0px;
+  }
+  .primary_container section .counter .number-count .col.card-group .card .row .num-count h3 {
+    font-size: 20px;
+  }
+  .primary_container section .counter .number-count .col.card-group .card .row p {
+    font-size: 10.5px;
+  }
+  .primary_container section .assist span.colorCircle {
+    left: -3.5%;
+    top: -12%;
+  }
+  .primary_container section .assist span.colorCircle img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 22px;
+    height: 22px;
+  }
+  .primary_container section .assist .call_now .card-group .card {
+    padding: 5px 10px;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header h4 {
+    width: 70%;
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .primary_container header .img_title {
+    width: 60%;
+  }
+  .primary_container header .img_title .logo_img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 90px;
+  }
+  .primary_container header .para_select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    margin-right: 10px;
+  }
+  .primary_container header .para_select .logo_text {
+    margin-right: 0px;
+  }
+  .primary_container section .revenue_total {
+    height: 1020px;
+  }
+  .primary_container section .revenue_total .revenue .top h2 {
+    font-size: 24px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img p {
+    margin: 0 20px 0 0;
+    font-size: 12px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img p strong {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.05rem;
+    font-size: 15px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img span img {
+    width: 23px;
+    height: 23px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page {
+    display: block;
+    width: 90%;
+    height: 450px;
+    margin: 30px auto 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side {
+    width: 100%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side {
+    margin-top: 4%;
+    width: 100%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count {
+    height: 35% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(2) .num-count h3 {
+    font-size: 17px;
+  }
+  .primary_container section .counter .number-count {
+    margin: 10px 0;
+  }
+  .primary_container section .counter .number-count .col.card-group .card .row {
+    padding: 0px;
+  }
+  .primary_container section .counter .number-count .col.card-group .card .row .num-count h3 {
+    font-size: 17px;
+  }
+  .primary_container section .assist span.colorCircle {
+    left: -4%;
+  }
+  .primary_container section .assist .call_now .card-group {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .primary_container section .assist .call_now .card-group .card {
+    margin: 30px 0;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header h4 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .primary_container header {
+    display: inline-block;
+  }
+  .primary_container header .img_title {
+    width: 90%;
+  }
+  .primary_container header .para_select {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .primary_container header .para_select .logo_text {
+    margin-right: 10px;
+  }
+  .primary_container section .revenue_total {
+    height: 820px;
+  }
+  .primary_container section .revenue_total .revenue .top h2 {
+    font-size: 24px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img p {
+    margin: 0 20px 0 0;
+    font-size: 12px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img p strong {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.05rem;
+    font-size: 15px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img span img {
+    width: 23px;
+    height: 23px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page {
+    display: block;
+    width: 100%;
+    height: 350px;
+    margin: 30px auto 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side {
+    margin-top: 4%;
+    width: 100%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count {
+    height: 40% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .primary_container section .counter .number-count .col.card-group {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .primary_container section .counter .number-count .col.card-group .card {
+    margin: 10px 0px;
+  }
+  .primary_container section .counter .number-count .col.card-group .card .row {
+    border-right: 0px solid #706c6c8a;
+  }
+  .primary_container section .counter .number-count .col.card-group .card .row .num-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .primary_container section .assist span.colorCircle {
+    left: -5.5%;
+  }
+  .primary_container section .assist .call_now .card-group {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .primary_container section .assist .call_now .card-group .card {
+    margin: 30px 0;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header h4 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body ul.nav_icons {
+    right: 12px;
+  }
+  body ul.nav_icons li.nav_list {
+    padding: 0px;
+  }
+  .primary_container header .img_title {
+    width: 100%;
+    display: block;
+  }
+  .primary_container header .img_title .logo_img {
+    border-right: 0px solid #706c6c8a;
+  }
+  .primary_container header .img_title .logo_text {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #706c6c8a;
+  }
+  .primary_container header .para_select {
+    margin-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .primary_container header .para_select .logo_year .selectpicker {
+    font-size: 12px;
+  }
+  .primary_container section .revenue_total {
+    height: 1100px;
+  }
+  .primary_container section .revenue_total .revenue .top {
+    display: block;
+  }
+  .primary_container section .revenue_total .revenue .top h2 {
+    font-size: 20px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img p strong {
+    font-size: 14px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img span img {
+    width: 20px;
+    height: 20px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page {
+    height: 400px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side {
+    width: 100%;
+    height: 70%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card {
+    padding: 10px 10px 0px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card .card-header h1 {
+    font-size: 13.5px;
+    width: 80%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card .card-body {
+    padding: 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side {
+    width: 100%;
+    height: auto;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count {
+    height: 40% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    margin: 10px 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card {
+    margin: 15px 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(1) {
+    height: 40px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(1) span img {
+    width: 60%;
+    height: 60%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(2) .num-count h3 {
+    font-size: 16px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div {
+    width: 100%;
+    display: block;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card .card-header h4 {
+    font-size: 11px;
+    width: 80%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card .card-header span a img {
+    width: 12px;
+    height: 12px;
+  }
+  .primary_container section .counter .number-count {
+    margin: 10px 0px 0;
+    padding: 10px 20px 5px;
+  }
+  .primary_container section .counter .number-count .col.card-group {
+    width: 100%;
+  }
+  .primary_container section .counter .number-count .col.card-group .card {
+    margin: 15px 0px;
+  }
+  .primary_container section .assist span.colorCircle {
+    top: -6%;
+    left: -8%;
+  }
+  .primary_container section .assist span.colorCircle img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 20px;
+    height: 20px;
+  }
+  .primary_container section .assist .call_now .card-group {
+    width: 90%;
+  }
+  .primary_container section .assist .call_now .card-group .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header h4 {
+    font-size: 11px;
+    width: 80%;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header span a img {
+    width: 12px;
+    height: 12px;
+  }
+  .primary_container footer {
+    float: left;
+  }
+  .primary_container footer p {
+    color: #fff;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body ul.nav_icons {
+    right: 12px;
+  }
+  body ul.nav_icons li.nav_list {
+    padding: 0px;
+  }
+  .primary_container header .img_title {
+    width: 100%;
+    display: block;
+  }
+  .primary_container header .img_title .logo_img {
+    border-right: 0px solid #706c6c8a;
+  }
+  .primary_container header .img_title .logo_text {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #706c6c8a;
+  }
+  .primary_container header .para_select {
+    margin-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .primary_container header .para_select .logo_year .selectpicker {
+    font-size: 12px;
+  }
+  .primary_container section .revenue_total {
+    height: 1100px;
+  }
+  .primary_container section .revenue_total .revenue .top {
+    display: block;
+  }
+  .primary_container section .revenue_total .revenue .top h2 {
+    font-size: 20px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img p strong {
+    font-size: 14px;
+  }
+  .primary_container section .revenue_total .revenue .top .hour_img span img {
+    width: 20px;
+    height: 20px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page {
+    height: 400px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side {
+    width: 100%;
+    height: 70%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card {
+    padding: 10px 10px 0px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card .card-header h1 {
+    font-size: 13.5px;
+    width: 80%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .left_side .card .card-body {
+    padding: 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side {
+    width: 100%;
+    height: auto;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count {
+    height: 40% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    margin: 10px 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card {
+    margin: 15px 0;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(1) {
+    height: 40px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(1) span img {
+    width: 60%;
+    height: 60%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .number_count .card .col-md-8:nth-child(2) .num-count h3 {
+    font-size: 16px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div {
+    width: 100%;
+    display: block;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card .card-header h4 {
+    font-size: 11px;
+    width: 80%;
+  }
+  .primary_container section .revenue_total .revenue .chart_page .right_side .chart_div .card .card-header span a img {
+    width: 12px;
+    height: 12px;
+  }
+  .primary_container section .counter .number-count {
+    margin: 10px 0px 0;
+    padding: 10px 20px 5px;
+  }
+  .primary_container section .counter .number-count .col.card-group {
+    width: 100%;
+  }
+  .primary_container section .counter .number-count .col.card-group .card {
+    margin: 15px 0px;
+  }
+  .primary_container section .assist span.colorCircle {
+    top: -6%;
+    left: -8%;
+  }
+  .primary_container section .assist span.colorCircle img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 20px;
+    height: 20px;
+  }
+  .primary_container section .assist .call_now .card-group {
+    width: 90%;
+  }
+  .primary_container section .assist .call_now .card-group .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header h4 {
+    font-size: 11px;
+    width: 80%;
+  }
+  .primary_container section .assist .call_now .card-group .card .card-header span a img {
+    width: 12px;
+    height: 12px;
+  }
+  .primary_container footer {
+    float: left;
+  }
+  .primary_container footer p {
+    color: #fff;
+    font-size: 11px;
+  }
+}

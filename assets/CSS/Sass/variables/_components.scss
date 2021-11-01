@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.with_border {
+  border-bottom: 1px solid $border_Color1 !important;
+}
+.without_border {
+  border-bottom: 0px solid $border_Color1 !important;
+}
+.card {
+  border: 0px;
+}
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex_align {
+  display: flex;
+  align-items: center;
+}
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex_baseline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@mixin flex_evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@mixin flex_end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@mixin flex_stretch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+}
+@mixin flex_around {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+@mixin flex_twoend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+}
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+//card
+@mixin p_tag {
+  font-family: $font1;
+  padding: 0;
+  margin: 0;
+  color: $gray;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@mixin card_img {
+  width: auto;
+  height: auto;
+  .card_img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@mixin span {
+  padding: $pm-1;
+  a {
+    img {
+      width: 14px;
+      height: 14px;
+      margin: $pm-1;
+      object-fit: contain;
+    }
+  }
+}
+@mixin h3 {
+  font-size: 24px;
+  font-family: $font2;
+  font-weight: 600;
+  margin: 0;
+  color: $white;
+  letter-spacing: 0.05rem;
+  line-height: 1.5em;
+}
+
+@mixin h4 {
+  font-family: $font1;
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
+  margin: 0;
+  text-transform: uppercase;
+}
+@mixin strong {
+  font-family: $font2;
+  margin: 0;
+  color: $white;
+  letter-spacing: 0.05rem;
+}
+
+//tab
+@mixin h4_tab {
+  width: 70%;
+  font-size: 12.5px;
+}
+
+//mobile
+@mixin card_header {
+  h4 {
+    font-size: 11px;
+    width: 80%;
+  }
+  span {
+    a {
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
